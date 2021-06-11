@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-bottom:#f9826c solid 3px;
+    border-right: 0ch;
+    border-left: 0ch;
+    color: black;
+    font-weight: 600;
+}
+.nav-link{
+    color: #24292e;
+}
+.nav-link.active .bi{
+    color:black;
+    font-weight: 600;
+}
+.bi{
+   color: #d1d5da;
+   margin-right: 5px;
+}
+.nav-tabs .nav-link:hover{
+    color: #24292e;
+    border-bottom: #d1d5da solid 3px;
+    border-right: white 0px;
+    border-left: white 0px;
+
+}
+.nav-tabs .nav-link:focus {
+    border-right: white 0px;
+    border-left: white 0px;
+    border-bottom:#f9826c solid 3px;
+    isolation: isolate;
+}
+.nav-link.active:hover{
+    border-bottom:#f9826c solid 3px;
+}
