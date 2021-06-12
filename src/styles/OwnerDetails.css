@@ -15,7 +15,8 @@
     margin-top: 1rem;
     align-self: self-end;
     width: -webkit-fill-available;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 h3{
     font-weight: 100 !important;
@@ -32,9 +33,18 @@ h3{
     color: #24292e;
     font-size: 14px;
     font-weight: 500;
-
+    width: -webkit-fill-available;
+}
+.follow-section{
+    margin-bottom: 1rem;
 }
 .follow-section a{
     margin-left: 3px;
     color: #586069 !important;
+}
+.follow-section a:hover{
+    cursor: pointer;
+}
+.strong{
+    color: black !important;
 }
