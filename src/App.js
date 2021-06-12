@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
 import SearchBar from "./components/SearchBar";
 import Tab from "./components/Tab";
+import OwnerDetails from "./components/OwnerDetails";
 
 function App() {
   const [user, setUser] = useState("iliakan")
@@ -24,6 +25,8 @@ function App() {
     }
   };
   useEffect(() => {
+    // can change user here to whoevers
+    // repos we would like to fetch with setUser(name)
     fetchRepos(user);
   }, []);
 
@@ -31,15 +34,15 @@ function App() {
   console.log(owner, "the owner")
   return (
     <div className="App">
-      <Container>
         <Row>
-          <Col lg={3}>profile</Col>
-          <Col lg={8}>
+          <Col lg={3}>
+            <OwnerDetails owner={owner}/>
+          </Col>
+          <Col lg={9}>
             <Tab />
             <SearchBar />
           </Col>
         </Row>
-      </Container>
     </div>
   );
 }

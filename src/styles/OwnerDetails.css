@@ -1,0 +1,40 @@
+.owner-avatar{
+    border: solid 1px #8080804f;
+    border-radius: 50%;
+    width: 18rem;
+}
+.owner-section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.owner-details{
+    margin-top: 1rem;
+    align-self: self-end;
+    width: -webkit-fill-available;
+    margin-left: 2rem;
+}
+h3{
+    font-weight: 100 !important;
+}
+.follow-button{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #1b1f2326;
+    padding: 5px 16px;
+    background-color: #fafbfc;
+    box-shadow:#ececec ;
+    transition: .2s cubic-bezier(.3,0,.5,1);
+    color: #24292e;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.follow-section a{
+    margin-left: 3px;
+    color: #586069 !important;
+}
