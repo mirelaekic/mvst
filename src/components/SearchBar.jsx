@@ -5,7 +5,7 @@ import "../styles/SearchBar.css";
 export default function SearchBar() {
 
   return (
-    <Row className="mt-4">
+      <div className="search">
       <Col lg={7} className="search-column">
         <FormControl
           type="text"
@@ -29,6 +29,6 @@ export default function SearchBar() {
           ></DropdownButton>
         </div>
       </Col>
-    </Row>
+      </div>
   );
 }

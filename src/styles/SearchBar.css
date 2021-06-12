@@ -1,14 +1,21 @@
+.search{
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 .filter-dropdowns{
     display:flex;
 }
 .filter-dropdowns .dropdown{
-    margin-left: 3px;
+    margin-left: 10px;
 }
 .dropdown button {
     background-color: #fafbfc;
     color: #24292e;
     border-color: #1b1f2326;
-
+    font-weight: 600;
 }
 .dropdown button:hover{
     background-color: #f3f4f6 ;
