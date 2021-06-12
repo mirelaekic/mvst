@@ -3,13 +3,13 @@ import Repository from './Repository'
 
 export default function RepositoriesList({repositories}) {
     return (
-        <ul>
+        <div>
             {repositories.map((repo, index) => (
                 <Repository 
                 {...repo}
-                key={index}
+                key={repo.id}
                 />
             ))}
-        </ul>
+        </div>
     )
 }

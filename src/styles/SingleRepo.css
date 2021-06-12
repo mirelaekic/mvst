@@ -1,0 +1,36 @@
+.repo-card{
+    border-left: white;
+    border-right: white;
+    border-bottom: white;
+    border-radius: 0px;
+    padding: 5px;
+}
+.card-title{
+    font-size: 20px !important;
+    display: flex;
+    place-content: space-between;
+    margin-bottom: 4px;
+}
+.card-title a{
+    margin-bottom: 3px;
+    color: #0366d6 !important;
+    font-weight: 600;
+}
+.card-title a:hover{
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+.star-button{
+    background-color: #f3f4f6 ;
+    color: #24292e;
+    padding: 3px 12px !important;
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid #1b1f2326;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.star-button i{
+    color: #6a737d !important;
+    font-weight: 600 !important;
+}

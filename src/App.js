@@ -5,7 +5,7 @@ import SearchBar from "./components/SearchBar";
 import Tab from "./components/Tab";
 import OwnerDetails from "./components/OwnerDetails";
 import RepositoriesList from "./components/RepositoriesList";
-
+import "./App.css"
 function App() {
   const [user, setUser] = useState("iliakan")
   const [repositories, setRepositories] = useState([]);
@@ -33,7 +33,7 @@ function App() {
   console.log(repositories, "repositories");
   console.log(owner, "the owner")
   return (
-    <Container>
+    <div className="cont">
         <Row>
           <Col lg={3}>
             <OwnerDetails owner={owner}/>
@@ -44,7 +44,7 @@ function App() {
             <RepositoriesList repositories={repositories} />
           </Col>
         </Row>
-    </Container>
+    </div>
   );
 }
 
