@@ -5,7 +5,7 @@ import "../styles/MainNavbar.css"
 export default function MainNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
-        <Navbar.Brand href="#home"><i class="bi bi-github"></i></Navbar.Brand>
+        <Navbar.Brand href="#home"><i className="bi bi-github"></i></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto git">

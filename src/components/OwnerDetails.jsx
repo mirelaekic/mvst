@@ -57,7 +57,7 @@ export default function OwnerDetails({ owner }) {
       </div>
       <div className="follow-section">
         <a>
-          <i class="bi bi-people"></i>
+          <i className="bi bi-people"></i>
           <strong className="strong">{followers}</strong> followers
         </a>{" "}
         ·
@@ -66,7 +66,7 @@ export default function OwnerDetails({ owner }) {
         </a>{" "}
         ·
         <a>
-          <i class="bi bi-star"></i>
+          <i className="bi bi-star"></i>
           <strong className="strong">{starred}</strong>
         </a>
       </div>

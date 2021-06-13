@@ -21,17 +21,17 @@ export default function Repository({
           </button>
         </Card.Title>
         <Card.Text className="text-muted">{description}</Card.Text>
-        <Card.Text className="repo-info text-muted">
+        <div className="repo-info text-muted">
           {language ? <p><span className="language-color"></span>{language}</p> : ""}
           {stargazers_count > 0 ? <p>
-            <i class="bi bi-star"></i>
+            <i className="bi bi-star"></i>
             {stargazers_count}
           </p> : ""}
           {forks > 0 ? <p>
-            <i class="fa fa-code-fork" aria-hidden="true"></i> {forks}
+            <i className="fa fa-code-fork" aria-hidden="true"></i> {forks}
           </p> : ""}
           <p>Updated <Moment fromNow>{updated_at}</Moment></p>
-        </Card.Text>
+        </div>
       </Card.Body>
     </Card>
   );

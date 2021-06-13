@@ -6,12 +6,14 @@ import Tab from "./components/Tab";
 import OwnerDetails from "./components/OwnerDetails";
 import "./App.css"
 import MainNavbar from "./components/MainNavbar";
+import { Spinner } from "react-bootstrap";
 function App() {
   const [user] = useState("iliakan")
   const [repositories, setRepositories] = useState([]);
   const [owner, setOwner] = useState({})
-
+  const [loading, setLoading] = useState(true)
   const fetchRepos = async (user) => {
+    setLoading(true)
     try {
       const response = await fetch(
         `https://api.github.com/users/${user}/repos`
@@ -20,6 +22,7 @@ function App() {
         const repo = await response.json();
         await setRepositories(repo);
         setOwner(repo[0].owner)
+        setLoading(false)
       }
     } catch (error) {
       console.log(error);
@@ -29,7 +32,7 @@ function App() {
     fetchRepos(user);
   }, []);
 
-  return (
+  return loading ? <Spinner animation="grow" /> : (
     <>
     <MainNavbar />
     <div className="cont">
