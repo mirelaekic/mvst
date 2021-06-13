@@ -5,6 +5,7 @@ import SearchBar from "./components/SearchBar";
 import Tab from "./components/Tab";
 import OwnerDetails from "./components/OwnerDetails";
 import "./App.css"
+import MainNavbar from "./components/MainNavbar";
 function App() {
   const [user] = useState("iliakan")
   const [repositories, setRepositories] = useState([]);
@@ -31,6 +32,8 @@ function App() {
   console.log(repositories, "repositories");
   console.log(owner, "the owner")
   return (
+    <>
+    <MainNavbar />
     <div className="cont">
         <Row>
           <Col lg={3}>
@@ -42,6 +45,7 @@ function App() {
           </Col>
         </Row>
     </div>
+    </>
   );
 }
 
