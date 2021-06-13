@@ -18,7 +18,7 @@ function App() {
       );
       if (response.ok) {
         const repo = await response.json();
-        setRepositories(repo);
+        await setRepositories(repo);
         setOwner(repo[0].owner)
       }
     } catch (error) {
@@ -29,8 +29,6 @@ function App() {
     fetchRepos(user);
   }, []);
 
-  console.log(repositories, "repositories");
-  console.log(owner, "the owner")
   return (
     <>
     <MainNavbar />

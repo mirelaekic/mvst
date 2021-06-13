@@ -17,7 +17,7 @@ export default function Repository({
         <Card.Title>
           <a>{name}</a>
           <button className="star-button">
-            <i class="bi bi-star"></i> Star
+            <i className="bi bi-star"></i> Star
           </button>
         </Card.Title>
         <Card.Text className="text-muted">{description}</Card.Text>
