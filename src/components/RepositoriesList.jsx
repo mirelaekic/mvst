@@ -4,7 +4,7 @@ import Repository from './Repository'
 export default function RepositoriesList({repositories}) {
     return (
         <div>
-            {repositories.map((repo, index) => (
+            {repositories.map(repo => (
                 <Repository 
                 {...repo}
                 key={repo.id}

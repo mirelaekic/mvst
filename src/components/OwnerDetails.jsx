@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Col } from "react-bootstrap";
 import "../styles/OwnerDetails.css";
 
 export default function OwnerDetails({ owner }) {
-  console.log(owner, "the owner of");
   const [followers, setFollowers] = useState(0);
   const [following, setFollowing] = useState(0);
   const [starred, setStarred] = useState(0);
@@ -45,12 +43,7 @@ export default function OwnerDetails({ owner }) {
     fetchFollowing(owner.login);
     fetchStarred(owner.login);
   }, []);
-  console.log(
-    followers,
-    following,
-    starred,
-    "The lenght of followers,following and starred"
-  );
+
   return (
     <div className="owner-section">
       <img

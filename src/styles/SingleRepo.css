@@ -11,6 +11,21 @@
     place-content: space-between;
     margin-bottom: 4px;
 }
+.repo-info{
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.repo-info p{
+    font-size: 13px;
+    margin-right: 15px;
+    margin-bottom: 0rem;
+}
+.repo-info p i {
+    color: #545454;
+}
 .card-title a{
     margin-bottom: 3px;
     color: #0366d6 !important;
