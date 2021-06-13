@@ -1,3 +1,6 @@
+# Features
+Allows to search through user repositories and filter them by the language and number of stars on each repository
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
