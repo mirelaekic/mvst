@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import SearchBar from "./components/SearchBar";
 import Tab from "./components/Tab";
 import OwnerDetails from "./components/OwnerDetails";
-import RepositoriesList from "./components/RepositoriesList";
 import "./App.css"
 function App() {
-  const [user, setUser] = useState("iliakan")
+  const [user] = useState("iliakan")
   const [repositories, setRepositories] = useState([]);
   const [owner, setOwner] = useState({})
 
@@ -26,7 +25,6 @@ function App() {
     }
   };
   useEffect(() => {
-    // here setUser(name) to change user
     fetchRepos(user);
   }, []);
 
@@ -40,8 +38,7 @@ function App() {
           </Col>
           <Col lg={9}>
             <Tab />
-            <SearchBar />
-            <RepositoriesList repositories={repositories} />
+            <SearchBar repositories={repositories}/>
           </Col>
         </Row>
     </div>
